@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: library
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:file:./data/librarydb;DB_CLOSE_DELAY=-1;NON_KEYWORDS=KEY,VALUE #jdbc:h2:mem:librarydb
+    driverClassName: org.h2.Driver
+    username: admin
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
